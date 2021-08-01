@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		html{
+			background-color: #7890ed;
+		}
+		.nama{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: green;
+			text-align: center;
+			font-size: 18px;
+			font-style: italic;
+			font-family: serif;
+			color: white;
+		}
+		h1,button{
+			text-align: center;
+			color: red;
+		}
+		.kotak{
+			width: 100%;
+			height: auto;
+			background-color: orange;
+
+		}
+		.kotak:hover{
+			background-color: black;
+
+
+		}
+		.conten1{
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+		}
+	.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+		}
+		
+		.conten1:hover{
+			border-radius: 100%;
+			transform: rotate(360deg);
+			transition-duration: 2s;
+			background-color: #666666;
+	
+		}
+		.conten2:hover{
+			border-radius: 100%;
+			transition: 2s;
+			transform: rotate(-360deg);
+			transition-duration: 2s;
+			background-color:#aa6789;
+
+		
+		}
+		.conten3:hover{
+			border-radius: 100%;
+			transition: 2s;
+			transform: rotate(360deg);
+			transition-duration: 2s;
+			background-color: blue;
+		
+
+
+		}
+		.conten4:hover{
+			border-radius: 100%;
+			transition: 2s;
+			transform: rotate(-360deg);
+			transition-duration: 2s;
+			background-color: yellow;
+
+		}
+		.p{
+			color: orange;
+		}
+
+		@media only screen and (max-width: 1400px)
+		{
+			html{
+				background-color: #abcd67;
+
+			}
+			.conten1{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+		}
+	.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+		}
+			.nama{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: blue;
+			text-align: center;
+			font-size: 18px;
+			font-style: italic;
+			font-family: serif;
+			color: white;
+		}
+
+		}
+
+		@media only screen and (max-width: 1080px)
+		{
+			html{
+				background-color: silver;
+			}
+			.nama{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #555555;
+			text-align: center;
+			font-size: 18px;
+			font-style: italic;
+			font-family: serif;
+			color: white;
+		}
+		.conten1{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+	.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+
+		}
+		@media only screen and (max-width: 720px)
+		{
+			html{
+				background-color: pink;
+			}
+			.conten1{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+		}
+	.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+		}
+		}
+		@media only screen and (max-width: 640px)
+		{
+			html{
+				background-color: skyblue;
+			}
+		}
+
+
+	</style>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+<body>
+	<div class="kotak">
+		<p class="p">Hai Nama Saya Eri Yulian Hidayat, Alamat Desa Sendawar Kecamatan Semidang Alas Maras Kabupaten Seluma Provinsi 
+		Bengkulu Negara Indonesia</p>
+	</div>
+	<center>
+<div class="conten1">
+	<h1><button onclick="return aksi()">click</button></h1>
+</div>
+<br>
+<div class="conten2">
+	<h1><button onclick="return aks()">click</button></h1>
+	
+</div>
+<br>
+<div class="conten3">
+	<h1><button onclick="return ak()">click</button></h1>
+</div>
+<br>
+<div class="conten4">
+	<h1><button onclick="return a()">click</button></h1>
+</div>
+</center>
+<script type="text/javascript">
+	function aksi() {
+		alert('Hai halaman ini diprogram oleh dayat');
+	}
+		function aks() {
+		var a= prompt("namanya siapa..?");
+		if (a==null || a=="") {
+	
+		alert("hemz rahasia namanya ya..!");
+	}
+else if (a<=1 || a>1) {
+	alert("yang anda masukkan bukan huruf");
+}
+
+	else{
+			alert("halo Selamat datang "+ a + " Perkenalkan nama saya dayat");
+	}
+}
+		function ak() {
+		var a= new Date().getHours();
+		var b= new Date().getMinutes();
+			 if (a==4) {
+			alert('hai selamat malam, jangan lagi tidur bentar lagi subuh, sekarang jam => '+a+':'+b);
+		}
+			 else if (a<4 ) {
+			alert('hai selamat malam, ini masih malam , sekarang jam => '+a+':'+b);
+		}
+			else if(a<=10 )
+		{
+			alert('hai selamat pagi, sekarang jam =>' +a+':'+b);
+		}
+				else if(a<=14 )
+		{
+			alert('hai selamat siang, sekarang jam =>' +a+':'+b);
+		}
+	
+		else if (a<=18 && b<=15) {
+			alert(' hai Selamat sore, sekarang jam =>' +a+':'+b);
+		}
+
+	
+		else{
+			alert('selamat malam, jangan begadang ya heheh, sekarang jam => ' +a+':'+b );
+		}
+		
+	}
+		function a() {
+	alert("Tes otak ..!")
+	var a= Math.floor(Math.random()*100);
+	var b= Math.floor(Math.random()*100);
+	var d= Math.floor(Math.random()*4);
+
+if (d==1) {
+	var c= a*b;
+	var d= prompt("Berapa Hasil "+a+"X"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else if (d==2) {
+	var c= a/b;
+	var d= prompt("Berapa Hasil "+a+"/"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else if (d==3) {
+	var c= a+b;
+	var d= prompt("Berapa Hasil "+a+"+"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else if (d==4) {
+	var c= a-b;
+	var d= prompt("Berapa Hasil "+a+"-"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else{
+	var c= a%b;
+	var d= prompt("Berapa Hasil "+a+"%"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+	  }
+	}
+  }
+}
+</script>
+<div class="nama">
+	<p>Programed by Eri yulian hidayat</p>
+</div>
+</body>
+</html>
+<!-- Halaman ini diprogram oleh Eri yulian hidayat -->
