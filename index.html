@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		html{
+			background-color: #7890ed;
+		}
+		.nama{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: green;
+			text-align: center;
+			font-size: 18px;
+			font-style: italic;
+			font-family: serif;
+			color: white;
+		}
+		h1,button{
+			text-align: center;
+			color: red;
+		}
+		.kotak{
+			width: 100%;
+			height: auto;
+			background-color: orange;
+
+		}
+		.kotak:hover{
+			background-color: black;
+
+
+		}
+		.conten1{
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+		}
+		.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: black;
+			height: auto;
+			overflow: hidden;
+		}
+		
+		.conten1:hover{
+			border-radius: 100%;
+			transform: rotate(360deg);
+			transition-duration: 2s;
+			background-color: #666666;
+	
+		}	
+		.conten2:hover{
+			border-radius: 100%;
+			transition: 2s;
+			transform: rotate(-360deg);
+			transition-duration: 2s;
+			background-color: #676e23;
+
+		
+		}
+		.conten3:hover{
+			border-radius: 100%;
+			transition: 2s;
+			transform: rotate(360deg);
+			transition-duration: 2s;
+			background-color: blue;
+		
+
+
+		}
+		.conten4:hover{
+			border-radius: 100%;
+			transition: 2s;
+			transform: rotate(-360deg);
+			transition-duration: 2s;
+			background-color: yellow;
+
+		}
+			.conten1:not(:hover){
+			transform: rotate(-360deg);
+			transition-duration: 2s;
+	
+		}
+			.conten2:not(:hover){
+			transform: rotate(360deg);
+			transition-duration: 2s;
+	
+		}
+			.conten3:not(:hover){
+			transform: rotate(-360deg);
+			transition-duration: 2s;
+	
+		}
+			.conten4:not(:hover){
+			transform: rotate(360deg);
+			transition-duration: 2s;
+	
+		}
+		.p{
+			color: orange;
+		}
+
+		@media only screen and (max-width: 1400px)
+		{
+			html{
+				background-color: #abcd67;
+
+			}
+			.conten1{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+		}
+		.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: skyblue;
+			height: auto;
+			overflow: hidden;
+		}
+			.nama{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: blue;
+			text-align: center;
+			font-size: 18px;
+			font-style: italic;
+			font-family: serif;
+			color: white;
+		}
+
+		}
+
+		@media only screen and (max-width: 1080px)
+		{
+			html{
+				background-color: silver;
+			}
+			.nama{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #555555;
+			text-align: center;
+			font-size: 18px;
+			font-style: italic;
+			font-family: serif;
+			color: white;
+		}
+		.conten1{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+		.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+		.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: red;
+			height: auto;
+			overflow: hidden;
+		}
+
+		}
+		@media only screen and (max-width: 720px)
+		{
+			html{
+				background-color: pink;
+			}
+			.conten1{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+
+
+		}
+		.conten2 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+		}
+		.conten3 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+		}
+			.conten4 {
+			top: auto;
+			width: 100px;
+			height: auto;
+			background-color: green;
+			height: auto;
+			overflow: hidden;
+		}
+		}
+		@media only screen and (max-width: 640px)
+		{
+			html{
+				background-color: skyblue;
+			}
+				.co{
+			color: rgb(15,25,5);
+			position: absolute;
+			font-size: 10px;
+		}
+		}
+		.conten5{
+			margin: 10px;
+			top: auto;
+			width: 100px;
+			height: auto;
+			height: auto;
+			overflow: hidden;
+
+		}
+		.conten5:hover{
+		margin: 10px;
+		background-image: url(aku.jpg);
+		background-size: 100px;
+		width: 100px;
+		height: 150px;
+		background-repeat: no-repeat;
+		}
+		.co{
+			color: rgb(15,25,5);
+			position: absolute;
+		}
+	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+<body>
+	<div class="kotak">
+		<p class="p">Hai Nama Saya Eri Yulian Hidayat, Alamat Desa Sendawar Kecamatan Semidang Alas Maras Kabupaten Seluma Provinsi 
+		Bengkulu Negara Indonesia</p>
+	</div>
+	<div class="co"> Sekarang Jam => 
+<span id="waktu"></span>
+</div>
+	<center>
+<div class="conten1">
+	<h1><button onclick="return aksi()">click</button></h1>
+</div>
+<br>
+<div class="conten2">
+	<h1><button onclick="return aks()">click</button></h1>
+	
+</div>
+<br>
+<div class="conten3">
+	<h1><button onclick="return ak()">click</button></h1>
+</div>
+<br>
+<div class="conten4">
+	<h1><button onclick="return tes()">click</button></h1>
+</div>
+<div class="conten5">
+	<button onclick="return bilangan()">Arahkan kesini</button>
+</div>
+</center>
+<script type="text/javascript">
+	var z=  new Date();
+	document.getElementById("waktu").innerHTML=z.toLocaleString();
+	
+
+	function aksi() {
+		alert('Hai halaman ini diprogram oleh dayat');
+	}
+		function aks() {
+		var a= prompt("namanya siapa..?");
+		if (a==null || a=="") {
+	
+		alert("hemz rahasia namanya ya..!");
+	}
+else if (a<=1 || a>1) {
+	alert("yang anda masukkan bukan huruf");
+}
+
+	else{
+			alert("halo Selamat datang "+ a + " Perkenalkan nama saya dayat");
+	}
+}
+		function ak() {
+		var a= new Date().getHours();
+		var b= new Date().getMinutes();	
+		var c= [5,6,7,8,9,10]; 
+		var d= [11,12,13,14];
+		var e= [15,16,17,18];
+		if (a==18 && b>15 || a>18  ) {
+			alert("Selamat malam, Sekarang jam => "+a+":"+b);
+		}
+
+		else if (a<4) {
+			alert("Selamat malam menjelang pagi, Sekarang jam => "+a+":"+b);
+		}
+
+		else if (a==4 && b<30) {
+			alert("bentar lagi pagi, Sekarang jam =>"+a+":"+b );
+		}
+		
+		else if (a==4 && b>=30) {
+			alert("Jangan tidur lagi karena sebentar lagi subuh, Sekarang jam => "+a+":"+b);
+		}
+		else if (a==5 && b<=15 ) {
+			alert(" waktunya sholat subuh, Sekarang jam => "+a+":"+b);
+		}
+
+		else if (a==c[0] || a==c[1] || a==c[2] || a==c[3] || a==c[4] || a==c[5] ) {
+			alert("ayo bangun, Sekarang sudah pagi => "+a+":"+b);
+		}
+		else if (a==14 && b>=15) {
+			alert("Selamat sore, Sekarang jam => "+a+":"+b);
+		}
+		else if (a==d[0] || a==d[1] || a==d[2] || a==d[3] ) {
+			alert(" Selamat siang, Sekarang jam => "+a+":"+b);
+		}
+		else if (a==e[0] || a==e[1] || a==e[2] || a==e[3] ) {
+			alert(" Selamat sore, Sekarang jam => "+a+":"+b);
+		}
+		
+
+	}
+		function tes() {
+	var a= Math.floor(Math.random()*100);
+	var b= Math.floor(Math.random()*100);
+	var d= Math.floor(Math.random()*4);
+	alert("Tes kecerdasan otak..!");
+
+if (d==1) {
+	var c= a*b;
+	var d= prompt("Berapa Hasil "+a+"X"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else if (d==2) {
+	var c= a/b;
+	var d= prompt("Berapa Hasil "+a+"/"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else if (d==3) {
+	var c= a+b;
+	var d= prompt("Berapa Hasil "+a+"+"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else if (d==4) {
+	var c= a-b;
+	var d= prompt("Berapa Hasil "+a+"-"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+		}
+	}
+}
+else{
+	var c= a%b;
+	var d= prompt("Berapa Hasil "+a+"%"+b +" ..?");
+	if (d==null || d=="") {
+	
+		alert("ya hahah gak tau jawabannya..!");
+	}
+	else{
+			if (d==c) {
+				alert("kamu benar jawabannya = " + c);
+			}
+
+			else{
+				alert("jawabannya salah, yang benar adalah "+ c);
+	  }
+	}
+  }
+    var t=confirm("lagi");
+  if (t==true) {
+  	return tes();
+  }
+}
+
+function bilangan() {
+	var a= prompt("masukkan angka yang ingin dicek apakah bilangan genap atau ganjil");
+	if (a==null || a=="") {
+	 		alert(" anda tidak memasukkan apa-apa");
+	 	}
+	else if (a<=1 || a>1)
+	 {
+	 	if (a % 2 == 0) {
+	 		alert("yang anda masukkan adalah bilangan genap");
+	 	}
+	 	else{
+	 		alert(" yang anda masukkan adalah bilangan ganjil");
+	 	}
+	 }
+	 else{
+	 	alert("yang anda masukkan bukan angka");
+	 }
+
+	var e=confirm("mau cek lagi");
+	if (e==true) {
+		return bilangan();
+	}
+}
+</script>
+<div class="nama">
+	<p>Programed by Eri yulian hidayat</p>
+</div>
+</body>
+<!-- Halaman ini diprogram oleh Eri yulian hidayat -->
+</html>
